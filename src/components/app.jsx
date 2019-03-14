@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
-import ReactCreateElementComponent from './task1/reactCreateElement.jsx';
-import ReactComponent from './task1/reactComponent.jsx';
-import ReactPureComponent from './task1/reactPureComponent.jsx';
-import ReactFunctionalComponent from './task1/reactFunctionalComponent.jsx';
+import ReactCreateElementComponent from 'Task1/reactCreateElement.jsx';
+import ReactComponent from 'Task1/reactComponent.jsx';
+import ReactPureComponent from 'Task1/reactPureComponent.jsx';
+import ReactFunctionalComponent from 'Task1/reactFunctionalComponent.jsx';
 
 const App = () => (
 	<Fragment>

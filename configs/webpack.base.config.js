@@ -30,15 +30,17 @@ module.exports = {
   			use: [
   				'file-loader'
   			]
-  		},
-  		{
-  			test: /\.(js|jsx)$/,
+			},
+			{
+				test: /\.(js|jsx)$/,
   			loader: 'babel-loader',
-  			exclude: /node_modules/,
-  			query: {
-          presets: ['es2015', 'react', 'stage-0']
-        }
-  		}
-  	]
+				exclude: /node_modules/
+			}
+		]
+  },
+  resolve: {
+    alias: {
+      Task1: path.resolve(rootFolder, 'src/components/task1/')
+    }
   }
 };
