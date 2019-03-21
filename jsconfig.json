@@ -4,7 +4,9 @@
     "allowSyntheticDefaultImports": false,
     "baseUrl": "./",
     "paths": {
-      "Task1/*": ["src/components/task1/*"]
+      "*": ["src/*"],
+      "Task1/*": ["src/components/task1/*"],
+      "Components/*": ["src/components/*"]
     }
   },
   "exclude": [
