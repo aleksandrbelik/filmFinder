@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/app.jsx';
+import App from 'Components/app';
 
-function component() {
+const component = () => {
   const element = document.createElement('div');
   element.id = 'App';
   return element;
-}
+};
 document.body.appendChild(component());
 
 ReactDOM.render(<App />, document.getElementById('App'));

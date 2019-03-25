@@ -1,0 +1,25 @@
+{
+    "extends": [
+        "airbnb-base",
+        "plugin:react/recommended"
+    ],
+    "settings": {
+      "import/resolver": {
+        "babel-module": {},
+        "webpack": {
+          "config": "./configs/webpack.base.config.js"
+        }
+      },
+      "react": {
+        "version": "detect"
+      }
+    },
+    "env": {
+      "jest": true,
+      "browser": true
+    },
+    "rules": {
+      "comma-dangle": ["error", "never"],
+      "class-methods-use-this": ["error", { "exceptMethods": ["render"] }]
+    }
+}
