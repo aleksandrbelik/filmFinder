@@ -39,6 +39,7 @@ module.exports = {
     ]
   },
   resolve: {
+    extensions: ['.js', '.jsx'],
     alias: {
       Task1: path.resolve(rootFolder, './src/components/task1'),
       Components: path.resolve(rootFolder, './src/components')

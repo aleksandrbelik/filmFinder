@@ -9,6 +9,9 @@
         "webpack": {
           "config": "./configs/webpack.base.config.js"
         }
+      },
+      "react": {
+        "version": "detect"
       }
     },
     "env": {

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --config=configs/webpack.production.config.js",
-    "start": "webpack-dev-server --config=configs/webpack.development.config.js",
+    "start": "webpack-dev-server --open --config=configs/webpack.development.config.js",
     "test": "jest",
     "test-update": "jest --updateSnapshot",
     "test-eslint": "eslint '**/*.{js,jsx}' --quiet"
