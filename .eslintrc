@@ -1,6 +1,6 @@
 {
     "extends": [
-        "airbnb-base",
+        "airbnb",
         "plugin:react/recommended"
     ],
     "settings": {
@@ -20,6 +20,7 @@
     },
     "rules": {
       "comma-dangle": ["error", "never"],
-      "class-methods-use-this": ["error", { "exceptMethods": ["render"] }]
+      "class-methods-use-this": ["error", { "exceptMethods": ["render"] }],
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
     }
 }
