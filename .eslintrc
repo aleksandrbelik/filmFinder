@@ -20,7 +20,6 @@
     },
     "rules": {
       "comma-dangle": ["error", "never"],
-      "class-methods-use-this": ["error", { "exceptMethods": ["render"] }],
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
     }
 }
