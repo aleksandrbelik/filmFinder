@@ -6,7 +6,7 @@
     "start": "webpack-dev-server --open --config=configs/webpack.development.config.js",
     "test": "jest",
     "test-update": "jest --updateSnapshot",
-    "test-eslint": "eslint '**/*.{js,jsx}' --quiet"
+    "test-eslint": "eslint **/*.{js,jsx} --quiet"
   },
   "repository": {
     "type": "git",
