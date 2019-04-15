@@ -1,0 +1,26 @@
+{
+    "extends": [
+        "airbnb",
+        "plugin:react/recommended"
+    ],
+    "settings": {
+      "import/resolver": {
+        "babel-module": {},
+        "webpack": {
+          "config": "./configs/webpack.base.config.js"
+        }
+      },
+      "react": {
+        "version": "detect"
+      }
+    },
+    "env": {
+      "jest": true,
+      "browser": true
+    },
+    "rules": {
+      "comma-dangle": ["error", "never"],
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "linebreak-style": 0
+    }
+}
