@@ -35,14 +35,19 @@
   }
 
   &__filter__btn {
-    background: @red-btn;
+    background: @dark-grey;
     border: none;
     border-radius: 2px;
     color: @white;
+    cursor: pointer;
     font-size: 12px;
     margin-left: 10px;
     outline: none;
     padding: 4px 14px;
+
+    &.is-active {
+      background: @red-btn;
+    }
   }
 
   &__button {
@@ -50,6 +55,7 @@
     border: none;
     border-radius: 2px;
     color: @white;
+    cursor: pointer;
     font-size: 16px;
     outline: none;
     padding: 7px 50px;

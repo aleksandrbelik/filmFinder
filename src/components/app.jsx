@@ -1,9 +1,9 @@
 import React from 'react';
-import FilmDetailsPage from 'Components/pages/filmDetailsPage/filmDetailsPage';
+import SearchPage from 'Components/pages/searchPage/searchPage';
 import 'Styles/main.less';
 
 const App = () => (
-  <FilmDetailsPage />
+  <SearchPage />
 );
 
 export default App;

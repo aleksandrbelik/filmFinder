@@ -1,14 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import FilmCard from 'Common/filmCard/filmCard';
+import SearchEmpty from 'Common/searchEmpty/searchEmpty';
 import './filmsList.less';
 
 const FilmList = ({ films }) => (
   <div className="film-list">
     {
-      films && !!films.length && films.map(film => (
+      !!films.length && films.map(film => (
         <FilmCard key={film.name} {...film} />
       ))
+    }
+    {
+      !films.length && (
+        <SearchEmpty />
+      )
     }
   </div>
 );

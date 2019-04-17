@@ -1,7 +1,7 @@
 import React from 'react';
 import Page from 'Common/page/page';
-import SearchForm from 'Common/searchForm/searchForm';
-import Sorting from 'Common/sorting/sorting';
+import SearchForm from 'Common/searchForm/searchFormContainer';
+import Sorting from 'Common/sorting/sortingContainer';
 import FilmsList from 'Common/filmsList/filmsList';
 
 const SearchPage = () => (
