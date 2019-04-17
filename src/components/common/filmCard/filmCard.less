@@ -1,9 +1,35 @@
+@import '~Styles/variables.less';
+
 .film-card {
+  margin-top: 30px;
   max-width: 220px;
   overflow: hidden;
 
   &__image {
     height: 300px;
     width: auto;
+  }
+
+  &__info {
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+
+  &__name {
+    text-transform: uppercase;
+  }
+
+  &__year {
+    border: 1px solid;
+    border-radius: 2px;
+    font-size: 11px;
+    padding: 1px 4px;
+  }
+
+  &__genre {
+    color: @dark-grey;
+    font-size: 11px;
   }
 }

@@ -16,12 +16,24 @@
   }
 
   &__header__top {
+    display: flex;
+    justify-content: space-between;
     padding-top: 15px;
   }
 
   &__header__name {
     color: @dark-red;
     font-size: 16px;
+  }
+
+  &__header__button {
+    background: @white;
+    border: none;
+    border-radius: 2px;
+    color: @red-btn;
+    font-size: 14px;
+    outline: none;
+    padding: 5px 20px;
   }
 
   &__header-line {
@@ -49,5 +61,11 @@
     padding: 0 40px;
     position: absolute;
     width: 100%;
+  }
+
+  &.is-film-details {
+    .page__header__container {
+      padding: 0 40px;
+    }
   }
 }
