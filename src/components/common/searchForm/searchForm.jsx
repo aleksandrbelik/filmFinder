@@ -1,4 +1,5 @@
 import React from 'react';
+import ErrorBoundaryWrapper from 'Components/hoc/errorBoundary/errorBoundaryWrapper';
 import './searchForm.less';
 
 const SearchForm = () => (
@@ -18,4 +19,4 @@ const SearchForm = () => (
   </form>
 );
 
-export default SearchForm;
+export default ErrorBoundaryWrapper(SearchForm);

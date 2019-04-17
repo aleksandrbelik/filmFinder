@@ -1,4 +1,5 @@
 import React from 'react';
+import ErrorBoundaryWrapper from 'Components/hoc/errorBoundary/errorBoundaryWrapper';
 import './filmDetails.less';
 
 const FilmDetails = () => (
@@ -18,4 +19,4 @@ const FilmDetails = () => (
   </div>
 );
 
-export default FilmDetails;
+export default ErrorBoundaryWrapper(FilmDetails);

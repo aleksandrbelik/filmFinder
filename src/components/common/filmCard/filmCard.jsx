@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ErrorBoundaryWrapper from 'Components/hoc/errorBoundary/errorBoundaryWrapper';
 import './filmCard.less';
 
 const FilmCard = ({
@@ -25,4 +26,4 @@ FilmCard.propTypes = {
   imgSrc: PropTypes.string.isRequired
 };
 
-export default FilmCard;
+export default ErrorBoundaryWrapper(FilmCard);

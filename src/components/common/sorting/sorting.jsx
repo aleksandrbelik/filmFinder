@@ -1,4 +1,5 @@
 import React from 'react';
+import ErrorBoundaryWrapper from 'Components/hoc/errorBoundary/errorBoundaryWrapper';
 import './sorting.less';
 
 const Sorting = () => (
@@ -12,4 +13,4 @@ const Sorting = () => (
   </div>
 );
 
-export default Sorting;
+export default ErrorBoundaryWrapper(Sorting);
