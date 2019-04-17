@@ -1,17 +1,9 @@
-import React, { Fragment } from 'react';
-import ReactCreateElementComponent from 'Task1/reactCreateElement';
-import ReactComponent from 'Task1/reactComponent';
-import ReactPureComponent from 'Task1/reactPureComponent';
-import ReactFunctionalComponent from 'Task1/reactFunctionalComponent';
+import React from 'react';
+import SearchPage from 'Components/searchPage/searchPage';
+import 'Styles/main.less';
 
 const App = () => (
-  <Fragment>
-    <div>Blank message</div>
-    <ReactCreateElementComponent />
-    <ReactComponent />
-    <ReactPureComponent />
-    <ReactFunctionalComponent />
-  </Fragment>
+  <SearchPage />
 );
 
 export default App;

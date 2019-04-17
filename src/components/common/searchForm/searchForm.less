@@ -1,0 +1,57 @@
+@import "~Styles/variables.less";
+
+.search-form {
+  padding-top: 30px;
+
+  &__label {
+    color: @white;
+    display: block;
+    font-size: 14px;
+  }
+
+  &__input {
+    background: @black;
+    border: none;
+    border-bottom: 1px solid @dark-red;
+    box-sizing: border-box;
+    color: @white;
+    font-size: 14px;
+    margin-top: 15px;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  &__filter__label {
+    color: @white;
+    font-size: 12px;
+  }
+
+  &__filter__btn {
+    background: @red-btn;
+    border: none;
+    border-radius: 2px;
+    color: @white;
+    font-size: 12px;
+    margin-left: 10px;
+    outline: none;
+    padding: 4px 14px;
+  }
+
+  &__button {
+    background: @red-btn;
+    border: none;
+    border-radius: 2px;
+    color: @white;
+    font-size: 16px;
+    outline: none;
+    padding: 7px 50px;
+  }
+}

@@ -8,7 +8,9 @@
       "root": ["./src"],
       "alias": {
         "Task1": "./src/components/task1",
-        "Components": "./src/components"
+        "Components": "./src/components",
+        "Common": "./src/components/common",
+        "Styles": "./src/styles"
       }
     }]
   ]

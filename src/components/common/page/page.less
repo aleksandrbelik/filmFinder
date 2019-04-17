@@ -1,0 +1,53 @@
+@import "~Styles/variables.less";
+
+.page {
+  margin: auto;
+  max-width: 800px;
+  min-height: 100vh;
+  position: relative;
+
+  &__header {
+    background: url('../../../assets/079346118045.jpg');
+  }
+
+  &__header__container {
+    background: @dark-background;
+    padding: 0 70px;
+  }
+
+  &__header__top {
+    padding-top: 15px;
+  }
+
+  &__header__name {
+    color: @dark-red;
+    font-size: 16px;
+  }
+
+  &__header-line {
+    align-items: center;
+    background: @grey;
+    display: flex;
+    min-height: 45px;
+    padding: 0 70px;
+  }
+
+  &__content {
+    box-sizing: border-box;
+    padding-bottom: 50px;
+  }
+
+  &__footer {
+    align-items: center;
+    background: @black;
+    bottom: 0;
+    box-sizing: border-box;
+    color: @dark-red;
+    display: flex;
+    font-size: 16px;
+    height: 50px;
+    padding: 0 40px;
+    position: absolute;
+    width: 100%;
+  }
+}
