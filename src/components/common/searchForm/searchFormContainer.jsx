@@ -1,5 +1,4 @@
 import React from 'react';
-import ErrorBoundaryWrapper from 'Components/hoc/errorBoundary/errorBoundaryWrapper';
 import SearchForm from './searchForm';
 import { FILTER_TITLE, FILTER_GENRE } from './searchFormHelpers';
 
@@ -49,4 +48,4 @@ class SearchFormContainer extends React.Component {
   }
 }
 
-export default ErrorBoundaryWrapper(SearchFormContainer);
+export default SearchFormContainer;

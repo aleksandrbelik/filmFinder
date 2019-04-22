@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import ErrorBoundaryWrapper from 'Components/hoc/errorBoundary/errorBoundaryWrapper';
 import './page.less';
 
 const Page = ({
@@ -50,4 +49,4 @@ Page.defaultProps = {
   isFilmDetails: false
 };
 
-export default ErrorBoundaryWrapper(Page);
+export default Page;

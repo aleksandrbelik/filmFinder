@@ -1,5 +1,4 @@
 import React from 'react';
-import ErrorBoundaryWrapper from 'Components/hoc/errorBoundary/errorBoundaryWrapper';
 import Sorting from './sorting';
 import { SORT_RELEASE_DATE, SORT_RATING } from './sortingHelpers';
 
@@ -33,4 +32,4 @@ class SortingContainer extends React.Component {
   }
 }
 
-export default ErrorBoundaryWrapper(SortingContainer);
+export default SortingContainer;
