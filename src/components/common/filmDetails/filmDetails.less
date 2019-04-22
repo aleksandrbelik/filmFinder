@@ -1,0 +1,48 @@
+@import '~Styles/variables.less';
+
+.film-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  
+  &__image-container {
+    min-width: 250px;
+    overflow: hidden;
+    width: 250px
+  }
+
+  &__image {
+    height: 350px;
+    width: auto;
+  }
+
+  &__main {
+    color: @white;
+    font-size: 14px;
+    padding-left: 60px;
+    width: 100%;
+  }
+
+  &__title {
+    color: @dark-red;
+    font-size: 28px;
+    padding-top: 15px;
+  }
+
+  &__subtitle {
+    padding-top: 5px;
+  }
+
+  &__info {
+    font-weight: 600;
+    padding-top: 10px;
+  }
+
+  &__duration {
+    margin-left: 20px;
+  }
+
+  &__description {
+    padding-top: 20px;
+  }
+}
