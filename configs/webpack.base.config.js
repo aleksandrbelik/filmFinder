@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -19,11 +20,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
+        test: /\.less$/,
+        use: [{
+          loader: 'style-loader' // creates style nodes from JS strings
+        }, {
+          loader: 'css-loader' // translates CSS into CommonJS
+        }, {
+          loader: 'less-loader' // compiles Less to CSS
+        }]
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -41,8 +45,9 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      Task1: path.resolve(rootFolder, './src/components/task1'),
-      Components: path.resolve(rootFolder, './src/components')
+      Components: path.resolve(rootFolder, './src/components'),
+      Common: path.resolve(rootFolder, './src/components/common'),
+      Styles: path.resolve(rootFolder, './src/styles')
     }
   }
 };
