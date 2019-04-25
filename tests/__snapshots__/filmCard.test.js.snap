@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="film-card"
+>
+  <img
+    alt=""
+    className="film-card__image"
+    src="imgSrc"
+  />
+  <div
+    className="film-card__info"
+  >
+    <div
+      className="film-card__name"
+    >
+      name
+    </div>
+    <div
+      className="film-card__year"
+    >
+      year
+    </div>
+  </div>
+  <div
+    className="film-card__genre"
+  >
+    genre
+  </div>
+</div>
+`;
