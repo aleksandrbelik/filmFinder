@@ -1,100 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1556296625214" clover="3.2.0">
-  <project timestamp="1556296625214" name="All files">
-    <metrics statements="26" coveredstatements="26" conditionals="6" coveredconditionals="5" methods="8" coveredmethods="8" elements="40" coveredelements="39" complexity="0" loc="26" ncloc="26" packages="7" files="16" classes="16"/>
-    <package name="filmCard">
+<coverage generated="1556313219780" clover="3.2.0">
+  <project timestamp="1556313219780" name="All files">
+    <metrics statements="54" coveredstatements="51" conditionals="6" coveredconditionals="6" methods="20" coveredmethods="19" elements="80" coveredelements="76" complexity="0" loc="54" ncloc="54" packages="9" files="20" classes="20"/>
+    <package name="common.filmCard">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="filmCard.jsx" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/filmCard/filmCard.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="11" count="20" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="11" count="48" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
       </file>
       <file name="filmCard.less" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/filmCard/filmCard.less">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="filmDetails">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+    <package name="common.filmDetails">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="filmDetails.jsx" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/filmDetails/filmDetails.jsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
       </file>
       <file name="filmDetails.less" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/filmDetails/filmDetails.less">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="filmsList">
-      <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
+    <package name="common.filmsList">
+      <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
       <file name="filmsList.jsx" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/filmsList/filmsList.jsx">
-        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="2"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="11" count="19" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="11" count="59" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
       </file>
       <file name="filmsList.less" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/filmsList/filmsList.less">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="page">
+    <package name="common.page">
       <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="page.jsx" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/page/page.jsx">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="12" count="11" type="stmt"/>
+        <line num="40" count="4" type="stmt"/>
+        <line num="47" count="4" type="stmt"/>
       </file>
       <file name="page.less" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/page/page.less">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="searchEmpty">
+    <package name="common.searchEmpty">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="searchEmpty.jsx" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/searchEmpty/searchEmpty.jsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
       </file>
       <file name="searchEmpty.less" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/searchEmpty/searchEmpty.less">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="searchForm">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+    <package name="common.searchForm">
+      <metrics statements="19" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="6"/>
       <file name="searchForm.jsx" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/searchForm/searchForm.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="15" count="11" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
       </file>
       <file name="searchForm.less" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/searchForm/searchForm.less">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
+      <file name="searchFormContainer.jsx" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/searchForm/searchFormContainer.jsx">
+        <metrics statements="14" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="37" count="10" type="stmt"/>
+        <line num="38" count="10" type="stmt"/>
+      </file>
       <file name="searchFormHelpers.js" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/searchForm/searchFormHelpers.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
       </file>
     </package>
-    <package name="sorting">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+    <package name="common.sorting">
+      <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
       <file name="sorting.jsx" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/sorting/sorting.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
       </file>
       <file name="sorting.less" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/sorting/sorting.less">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
+      <file name="sortingContainer.jsx" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/sorting/sortingContainer.jsx">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="24" count="8" type="stmt"/>
+        <line num="25" count="8" type="stmt"/>
+      </file>
       <file name="sortingHelpers.js" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/common/sorting/sortingHelpers.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.filmDetailsPage">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="filmDetailsPage.jsx" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/pages/filmDetailsPage/filmDetailsPage.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.searchPage">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="searchPage.jsx" path="/Users/aleksandrbelik/Documents/filmFinder/src/components/pages/searchPage/searchPage.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
       </file>
     </package>
   </project>

@@ -4,11 +4,17 @@ exports[`renders correctly 1`] = `
 <div
   className="sorting"
 >
-  <div>
+  <div
+    className="sorting__found"
+  >
     7 movies found
   </div>
-  <div>
-    <span>
+  <div
+    className="sorting__controls"
+  >
+    <span
+      className="sorting__controls__label"
+    >
       Sort by
     </span>
     <button

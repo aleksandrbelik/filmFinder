@@ -10,9 +10,9 @@ const Sorting = ({
   sort
 }) => (
   <div className="sorting">
-    <div>7 movies found</div>
-    <div>
-      <span>Sort by</span>
+    <div className="sorting__found">7 movies found</div>
+    <div className="sorting__controls">
+      <span className="sorting__controls__label">Sort by</span>
       <button
         className={classNames('sorting__button', { 'is-active': sort === SORT_RELEASE_DATE })}
         type="button"
