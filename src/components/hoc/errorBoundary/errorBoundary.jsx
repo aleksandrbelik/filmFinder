@@ -13,7 +13,7 @@ class ErrorBoundary extends React.Component {
       errorInfo
     });
     if (process.env.NODE_ENV === 'development') {
-      console.log(errorInfo);
+      console.log(errorInfo); // eslint-disable-line
     }
   }
 

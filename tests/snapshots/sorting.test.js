@@ -1,10 +1,10 @@
 import React from 'react';
-import FilmCard from 'Common/filmCard/filmCard';
+import Sorting from 'Common/sorting/sorting';
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<FilmCard name="name" genre="genre" year="year" imgSrc="imgSrc" />)
+    .create(<Sorting sort="sort" onSortRatingClick={() => {}} onSortReleaseDateClick={() => {}} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

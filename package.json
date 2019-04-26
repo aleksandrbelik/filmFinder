@@ -5,8 +5,10 @@
     "build": "webpack --config=configs/webpack.production.config.js",
     "start": "webpack-dev-server --open --config=configs/webpack.development.config.js",
     "test": "jest",
+    "test-coverage": "jest --coverage",
     "test-update": "jest --updateSnapshot",
-    "test-eslint": "eslint '**/*.{js,jsx}' --quiet"
+    "test-eslint": "eslint '**/*.{js,jsx}' --quiet",
+    "test-eslint-fix": "eslint '**/*.{js,jsx}' --fix"
   },
   "repository": {
     "type": "git",

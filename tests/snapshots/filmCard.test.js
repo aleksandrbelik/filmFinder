@@ -1,10 +1,10 @@
 import React from 'react';
-import SearchEmpty from 'Common/searchEmpty/searchEmpty';
+import FilmCard from 'Common/filmCard/filmCard';
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<SearchEmpty/>)
+    .create(<FilmCard name="name" genre="genre" year="year" imgSrc="imgSrc" />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
