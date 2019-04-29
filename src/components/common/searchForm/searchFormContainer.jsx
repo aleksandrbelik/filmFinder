@@ -30,7 +30,7 @@ class SearchFormContainer extends React.Component {
   onSubmit(e) {
     e.preventDefault();
     const { value } = this.state;
-    console.log(value);
+    console.log(value); // eslint-disable-line
   }
 
   render() {

@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="page is-film-details"
+>
+  <div
+    className="page__header"
+  >
+    <div
+      className="page__header__container"
+    >
+      <div
+        className="page__header__main"
+      >
+        <div
+          className="page__header__top"
+        >
+          <div
+            className="page__header__name"
+          >
+            netflixroulette
+          </div>
+          <button
+            className="page__header__button"
+            type="button"
+          >
+            SEARCH
+          </button>
+        </div>
+        <div
+          className="page__header__cnt"
+        >
+          <span>
+            header
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="page__header-line"
+  >
+    <span>
+      headerLine
+    </span>
+  </div>
+  <div
+    className="page__content"
+  >
+    <span>
+      content
+    </span>
+  </div>
+  <div
+    className="page__footer"
+  >
+    netflixroulette
+  </div>
+</div>
+`;
+
+exports[`renders correctly without headerLine and isFilmDetails props 1`] = `
+<div
+  className="page"
+>
+  <div
+    className="page__header"
+  >
+    <div
+      className="page__header__container"
+    >
+      <div
+        className="page__header__main"
+      >
+        <div
+          className="page__header__top"
+        >
+          <div
+            className="page__header__name"
+          >
+            netflixroulette
+          </div>
+        </div>
+        <div
+          className="page__header__cnt"
+        >
+          <span>
+            header
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="page__header-line"
+  />
+  <div
+    className="page__content"
+  >
+    <span>
+      content
+    </span>
+  </div>
+  <div
+    className="page__footer"
+  >
+    netflixroulette
+  </div>
+</div>
+`;
+
+exports[`renders correctly without headerLine prop 1`] = `
+<div
+  className="page is-film-details"
+>
+  <div
+    className="page__header"
+  >
+    <div
+      className="page__header__container"
+    >
+      <div
+        className="page__header__main"
+      >
+        <div
+          className="page__header__top"
+        >
+          <div
+            className="page__header__name"
+          >
+            netflixroulette
+          </div>
+          <button
+            className="page__header__button"
+            type="button"
+          >
+            SEARCH
+          </button>
+        </div>
+        <div
+          className="page__header__cnt"
+        >
+          <span>
+            header
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="page__header-line"
+  />
+  <div
+    className="page__content"
+  >
+    <span>
+      content
+    </span>
+  </div>
+  <div
+    className="page__footer"
+  >
+    netflixroulette
+  </div>
+</div>
+`;
+
+exports[`renders correctly without isFilmDetails prop 1`] = `
+<div
+  className="page"
+>
+  <div
+    className="page__header"
+  >
+    <div
+      className="page__header__container"
+    >
+      <div
+        className="page__header__main"
+      >
+        <div
+          className="page__header__top"
+        >
+          <div
+            className="page__header__name"
+          >
+            netflixroulette
+          </div>
+        </div>
+        <div
+          className="page__header__cnt"
+        >
+          <span>
+            header
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="page__header-line"
+  >
+    <span>
+      headerLine
+    </span>
+  </div>
+  <div
+    className="page__content"
+  >
+    <span>
+      content
+    </span>
+  </div>
+  <div
+    className="page__footer"
+  >
+    netflixroulette
+  </div>
+</div>
+`;

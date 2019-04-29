@@ -5,8 +5,10 @@
     "build": "webpack --config=configs/webpack.production.config.js",
     "start": "webpack-dev-server --open --config=configs/webpack.development.config.js",
     "test": "jest",
+    "test-coverage": "jest --coverage",
     "test-update": "jest --updateSnapshot",
-    "test-eslint": "eslint '**/*.{js,jsx}' --quiet"
+    "test-eslint": "eslint '**/*.{js,jsx}' --quiet",
+    "test-eslint-fix": "eslint '**/*.{js,jsx}' --fix"
   },
   "repository": {
     "type": "git",
@@ -26,8 +28,11 @@
     "babel-loader": "^8.0.5",
     "babel-plugin-module-resolver": "^3.2.0",
     "babel-plugin-transform-export-extensions": "^6.22.0",
+    "chai": "^4.2.0",
     "clean-webpack-plugin": "^2.0.1",
     "css-loader": "^2.1.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
     "eslint": "^5.15.3",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-import-resolver-babel-module": "^5.0.1",
@@ -43,6 +48,7 @@
     "less-loader": "^4.1.0",
     "react-test-renderer": "^16.8.4",
     "react-testing-library": "^6.0.0",
+    "sinon": "^7.3.2",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",

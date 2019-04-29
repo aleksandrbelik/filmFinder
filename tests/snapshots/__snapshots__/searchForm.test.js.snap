@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<form
+  className="search-form"
+  onSubmit={[Function]}
+>
+  <div
+    className="search-form__field"
+  >
+    <span
+      className="search-form__label"
+    >
+      FIND YOUR MOVIE
+    </span>
+    <input
+      className="search-form__input"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="search-form__controls"
+  >
+    <div
+      className="search-form__filter"
+    >
+      <span
+        className="search-form__filter__label"
+      >
+        SEARCH BY
+      </span>
+      <button
+        className="search-form__filter__btn"
+        onClick={[Function]}
+        type="button"
+      >
+        TITLE
+      </button>
+      <button
+        className="search-form__filter__btn"
+        onClick={[Function]}
+        type="button"
+      >
+        GENRE
+      </button>
+    </div>
+    <input
+      className="search-form__button"
+      type="submit"
+      value="SEARCH"
+    />
+  </div>
+</form>
+`;

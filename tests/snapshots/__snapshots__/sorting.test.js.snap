@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sorting"
+>
+  <div
+    className="sorting__found"
+  >
+    7 movies found
+  </div>
+  <div
+    className="sorting__controls"
+  >
+    <span
+      className="sorting__controls__label"
+    >
+      Sort by
+    </span>
+    <button
+      className="sorting__button"
+      onClick={[Function]}
+      type="button"
+    >
+      release date
+    </button>
+    <button
+      className="sorting__button"
+      onClick={[Function]}
+      type="button"
+    >
+      rating
+    </button>
+  </div>
+</div>
+`;

@@ -1,6 +1,7 @@
 module.exports = {
   transform: {
-    '^.+\\.(js|jsx)?$': 'babel-jest'
+    '^.+\\.(js|jsx)?$': 'babel-jest',
+    '^.+\\.(css|less)$': './tests/mocks/styleMock.js'
   },
   moduleFileExtensions: ['js', 'jsx'],
   moduleNameMapper: {
