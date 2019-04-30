@@ -7,7 +7,8 @@ const Page = ({
   header,
   headerLine,
   content,
-  isFilmDetails
+  isFilmDetails,
+  onSearchClick
 }) => (
   <div className={classNames('page', { 'is-film-details': isFilmDetails })}>
     <div className="page__header">
@@ -17,7 +18,7 @@ const Page = ({
             <div className="page__header__name">netflixroulette</div>
             {
               isFilmDetails && (
-                <button className="page__header__button" type="button">SEARCH</button>
+                <button className="page__header__button" type="button" onClick={onSearchClick}>SEARCH</button>
               )
             }
           </div>
@@ -41,7 +42,8 @@ Page.propTypes = {
   header: PropTypes.node.isRequired,
   headerLine: PropTypes.node,
   content: PropTypes.node.isRequired,
-  isFilmDetails: PropTypes.bool
+  isFilmDetails: PropTypes.bool,
+  onSearchClick: PropTypes.func.isRequired
 };
 
 Page.defaultProps = {

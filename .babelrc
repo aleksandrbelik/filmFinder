@@ -9,6 +9,7 @@
       "alias": {
         "Components": "./src/components",
         "Common": "./src/components/common",
+        "State": "./src/state",
         "Styles": "./src/styles"
       }
     }]

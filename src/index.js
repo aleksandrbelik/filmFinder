@@ -1,6 +1,7 @@
+import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from 'Components/app';
+import App from 'Components/appProvider';
 
 const component = () => {
   const element = document.createElement('div');

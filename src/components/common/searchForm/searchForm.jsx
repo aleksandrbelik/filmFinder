@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { FILTER_TITLE, FILTER_GENRE } from './searchFormHelpers';
+import { searchTypes } from 'State/list';
 import './searchForm.less';
 
 const SearchForm = ({
@@ -21,14 +21,14 @@ const SearchForm = ({
       <div className="search-form__filter">
         <span className="search-form__filter__label">SEARCH BY</span>
         <button
-          className={classNames('search-form__filter__btn', { 'is-active': filter === FILTER_TITLE })}
+          className={classNames('search-form__filter__btn', { 'is-active': filter === searchTypes.TITLE })}
           type="button"
           onClick={onFilterTitleClick}
         >
           TITLE
         </button>
         <button
-          className={classNames('search-form__filter__btn', { 'is-active': filter === FILTER_GENRE })}
+          className={classNames('search-form__filter__btn', { 'is-active': filter === searchTypes.GENRE })}
           type="button"
           onClick={onFilterGenreClick}
         >

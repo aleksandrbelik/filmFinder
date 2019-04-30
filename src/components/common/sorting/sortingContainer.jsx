@@ -1,35 +1,39 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { searchFilms } from 'State/list';
+import { sortTypes } from 'State/list';
 import Sorting from './sorting';
-import { SORT_RELEASE_DATE, SORT_RATING } from './sortingHelpers';
 
-class SortingContainer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      sort: SORT_RELEASE_DATE
-    };
-    this.onSortReleaseDateClick = this.onSortReleaseDateClick.bind(this);
-    this.onSortRatingClick = this.onSortRatingClick.bind(this);
+const SortingContainer = ({ sort, total, searchFilmsByReleaseDate, searchFilmsByRating }) => (
+  <Sorting
+    onSortReleaseDateClick={searchFilmsByReleaseDate}
+    onSortRatingClick={searchFilmsByRating}
+    sort={sort}
+    total={total}
+  />
+);
+
+SortingContainer.propTypes = {
+  searchFilms: PropTypes.func,
+  searchFilmsByReleaseDate: PropTypes.func.isRequired,
+  searchFilmsByRating: PropTypes.func.isRequired,
+  sort: PropTypes.string.isRequired,
+  total: PropTypes.number.isRequired
+};
+
+SortingContainer.defaultProps = {
+  searchFilms: null
+};
+
+export default connect(state => ({
+  sort: state.list.filters.sortBy,
+  total: state.list.searchResults.total
+}), dispatch => ({
+  searchFilmsByReleaseDate: () => {
+    dispatch(searchFilms({ sortBy: sortTypes.RELEASE_DATE }));
+  },
+  searchFilmsByRating: () => {
+    dispatch(searchFilms({ sortBy: sortTypes.RATING }));
   }
-
-  onSortReleaseDateClick() {
-    this.setState({ sort: SORT_RELEASE_DATE });
-  }
-
-  onSortRatingClick() {
-    this.setState({ sort: SORT_RATING });
-  }
-
-  render() {
-    const { sort } = this.state;
-    return (
-      <Sorting
-        onSortReleaseDateClick={this.onSortReleaseDateClick}
-        onSortRatingClick={this.onSortRatingClick}
-        sort={sort}
-      />
-    );
-  }
-}
-
-export default SortingContainer;
+}))(SortingContainer);
