@@ -1,0 +1,32 @@
+@import "~Styles/variables.less";
+
+.loader-layout {
+
+  &__content {
+    align-items: center;
+    background: @light-background;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    left: 0;
+    margin: 0;
+    max-width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  &__text {
+    color: @white;
+    font-size: 18px;
+  }
+
+  &.is-loading {
+    .loader-layout__content {
+      display: flex;
+    }
+  }
+}

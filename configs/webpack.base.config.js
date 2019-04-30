@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -12,6 +13,11 @@ module.exports = {
     path: path.resolve(rootFolder, './dist')
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+      }
+    }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'FilmFinder'
@@ -47,6 +53,7 @@ module.exports = {
     alias: {
       Components: path.resolve(rootFolder, './src/components'),
       Common: path.resolve(rootFolder, './src/components/common'),
+      State: path.resolve(rootFolder, './src/state'),
       Styles: path.resolve(rootFolder, './src/styles')
     }
   }

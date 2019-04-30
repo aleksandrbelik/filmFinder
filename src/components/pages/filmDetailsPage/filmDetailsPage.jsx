@@ -1,15 +1,29 @@
 import React from 'react';
-import Page from 'Common/page/page';
-import FilmDetails from 'Common/filmDetails/filmDetails';
-import FilmsList from 'Common/filmsList/filmsList';
+import PropTypes from 'prop-types';
+import Page from 'Common/page/pageContainer';
+import FilmDetails from 'Common/filmDetails/filmDetailsContainer';
+import FilmsListByGenre from 'Common/FilmsListByGenre/FilmsListByGenreContainer';
+import LoaderLayout from 'Common/loaderLayout/loaderLayout';
 
-const FilmDetailsPage = () => (
-  <Page
-    header={<FilmDetails />}
-    headerLine={<span>Films by Drama genre</span>}
-    content={<FilmsList />}
-    isFilmDetails
-  />
+const FilmDetailsPage = ({ isPending, isFetched, genre }) => (
+  <LoaderLayout isPending={isPending}>
+    <Page
+      header={<FilmDetails />}
+      headerLine={isFetched && <span>Films by {genre} genre</span>}
+      content={isFetched && <FilmsListByGenre genre={genre} />}
+      isFilmDetails
+    />
+  </LoaderLayout>
 );
+
+FilmDetailsPage.propTypes = {
+  isPending: PropTypes.bool.isRequired,
+  isFetched: PropTypes.bool.isRequired,
+  genre: PropTypes.string
+};
+
+FilmDetailsPage.defaultProps = {
+  genre: ''
+};
 
 export default FilmDetailsPage;

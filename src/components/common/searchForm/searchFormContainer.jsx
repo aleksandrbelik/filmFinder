@@ -1,13 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { searchFilms } from 'State/list';
 import SearchForm from './searchForm';
-import { FILTER_TITLE, FILTER_GENRE } from './searchFormHelpers';
+import { searchTypes } from 'State/list';
 
 class SearchFormContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: '',
-      filter: FILTER_TITLE
+      search: ''
     };
     this.onSubmit = this.onSubmit.bind(this);
     this.onInputChange = this.onInputChange.bind(this);
@@ -16,30 +18,39 @@ class SearchFormContainer extends React.Component {
   }
 
   onInputChange({ target: { value } }) {
-    this.setState({ value });
+    this.setState({ search: value });
   }
 
   onFilterTitleClick() {
-    this.setState({ filter: FILTER_TITLE });
+    const { search } = this.state;
+    this.props.searchFilms({
+      search,
+      searchBy: searchTypes.TITLE
+    });
   }
 
   onFilterGenreClick() {
-    this.setState({ filter: FILTER_GENRE });
+    const { search } = this.state;
+    this.props.searchFilms({
+      search,
+      searchBy: searchTypes.GENRE
+    });
   }
 
   onSubmit(e) {
     e.preventDefault();
-    const { value } = this.state;
-    console.log(value); // eslint-disable-line
+    const { search } = this.state;
+    this.props.searchFilms({ search });
   }
 
   render() {
-    const { value, filter } = this.state;
+    const { search } = this.state;
+    const { filter } = this.props;
     return (
       <SearchForm
         onSubmit={this.onSubmit}
         onChange={this.onInputChange}
-        value={value}
+        value={search}
         filter={filter}
         onFilterTitleClick={this.onFilterTitleClick}
         onFilterGenreClick={this.onFilterGenreClick}
@@ -48,4 +59,19 @@ class SearchFormContainer extends React.Component {
   }
 }
 
-export default SearchFormContainer;
+SearchForm.propTypes = {
+  searchFilms: PropTypes.func,
+  filter: PropTypes.string.isRequired
+};
+
+SearchForm.defaultProps = {
+  searchFilms: null
+};
+
+export default connect(state => ({
+  filter: state.list.filters.searchBy
+}), dispatch => ({
+  searchFilms: params => {
+    dispatch(searchFilms(params));
+  }
+}))(SearchFormContainer);
