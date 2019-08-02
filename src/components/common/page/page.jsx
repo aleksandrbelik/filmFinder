@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { Themes } from 'Utils/themes';
 import './page.less';
 
 const Page = ({
@@ -8,9 +9,14 @@ const Page = ({
   headerLine,
   content,
   isFilmDetails,
-  onSearchClick
+  onSearchClick,
+  theme
 }) => (
-  <div className={classNames('page', { 'is-film-details': isFilmDetails })}>
+  <div className={classNames('page', {
+    'is-film-details': isFilmDetails,
+    'theme-new-year': theme === Themes.NEW_YEAR,
+    'theme-summer': theme === Themes.SUMMER
+    })}>
     <div className="page__header">
       <div className="page__header__container">
         <div className="page__header__main">
@@ -43,7 +49,8 @@ Page.propTypes = {
   headerLine: PropTypes.node,
   content: PropTypes.node.isRequired,
   isFilmDetails: PropTypes.bool,
-  onSearchClick: PropTypes.func.isRequired
+  onSearchClick: PropTypes.func.isRequired,
+  theme: PropTypes.string.isRequired
 };
 
 Page.defaultProps = {

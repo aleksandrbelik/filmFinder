@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { searchTypes } from 'State/list';
+import { Themes } from 'Utils/themes';
 import './searchForm.less';
 
 const SearchForm = ({
@@ -10,9 +11,13 @@ const SearchForm = ({
   value,
   filter,
   onFilterTitleClick,
-  onFilterGenreClick
+  onFilterGenreClick,
+  theme
 }) => (
-  <form className="search-form" onSubmit={onSubmit}>
+  <form className={classNames('search-form', {
+    'theme-new-year': theme === Themes.NEW_YEAR,
+    'theme-summer': theme === Themes.SUMMER
+    })} onSubmit={onSubmit}>
     <div className="search-form__field">
       <span className="search-form__label">FIND YOUR MOVIE</span>
       <input className="search-form__input" type="text" value={value} onChange={onChange} />
@@ -46,7 +51,8 @@ SearchForm.propTypes = {
   value: PropTypes.string.isRequired,
   filter: PropTypes.string.isRequired,
   onFilterTitleClick: PropTypes.func.isRequired,
-  onFilterGenreClick: PropTypes.func.isRequired
+  onFilterGenreClick: PropTypes.func.isRequired,
+  theme: PropTypes.string.isRequired
 };
 
 export default SearchForm;

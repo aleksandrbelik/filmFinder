@@ -54,6 +54,7 @@ module.exports = {
       Components: path.resolve(rootFolder, './src/components'),
       Common: path.resolve(rootFolder, './src/components/common'),
       State: path.resolve(rootFolder, './src/state'),
+      Utils: path.resolve(rootFolder, './src/utils'),
       Styles: path.resolve(rootFolder, './src/styles')
     }
   }
