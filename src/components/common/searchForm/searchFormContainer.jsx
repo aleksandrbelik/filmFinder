@@ -45,7 +45,7 @@ class SearchFormContainer extends React.Component {
 
   render() {
     const { search } = this.state;
-    const { filter, theme } = this.props;
+    const { filter } = this.props;
     return (
       <SearchForm
         onSubmit={this.onSubmit}
@@ -54,7 +54,6 @@ class SearchFormContainer extends React.Component {
         filter={filter}
         onFilterTitleClick={this.onFilterTitleClick}
         onFilterGenreClick={this.onFilterGenreClick}
-        theme={theme}
       />
     );
   }
@@ -62,8 +61,7 @@ class SearchFormContainer extends React.Component {
 
 SearchForm.propTypes = {
   searchFilms: PropTypes.func,
-  filter: PropTypes.string.isRequired,
-  theme: PropTypes.string.isRequired
+  filter: PropTypes.string.isRequired
 };
 
 SearchForm.defaultProps = {

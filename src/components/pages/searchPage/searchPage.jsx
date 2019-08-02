@@ -6,21 +6,19 @@ import Sorting from 'Common/sorting/sortingContainer';
 import FilmsList from 'Common/filmsList/filmsListContainer';
 import LoaderLayout from 'Common/loaderLayout/loaderLayout';
 
-const SearchPage = ({ isPending, isFetched, theme }) => (
+const SearchPage = ({ isPending, isFetched }) => (
   <LoaderLayout isPending={isPending}>
     <Page
-      header={<SearchForm theme={theme} />}
+      header={<SearchForm />}
       headerLine={<Sorting />}
       content={isFetched && <FilmsList />}
-      theme={theme}
     />
   </LoaderLayout>
 );
 
 SearchPage.propTypes = {
   isPending: PropTypes.bool.isRequired,
-  isFetched: PropTypes.bool.isRequired,
-  theme: PropTypes.string.isRequired
+  isFetched: PropTypes.bool.isRequired
 };
 
 export default SearchPage;

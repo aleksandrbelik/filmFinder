@@ -3,18 +3,21 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import SearchPage from 'Components/pages/searchPage/searchPageContainer';
 import FilmDetailsPage from 'Components/pages/filmDetailsPage/filmDetailsPageContainer';
+import { ContextProvider } from 'Components/common/contextProvider';
 import { Themes } from 'Utils/themes';
 import 'Styles/main.less';
 
 const App = ({ filmId, theme }) => (
   <React.Fragment>
-    {
-      filmId ? (
-        <FilmDetailsPage id={filmId} theme={theme} />
-      ) : (
-        <SearchPage theme={theme} />
-      )
-    }
+    <ContextProvider value={theme}>
+      {
+        filmId ? ( 
+          <FilmDetailsPage id={filmId} />
+        ) : (
+          <SearchPage />
+        )
+      }
+    </ContextProvider>
   </React.Fragment>
 );
 
